@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Snake",
+"language": "GDScript",
+"path": "res://Scripts/Snake.gd"
+} ]
+_global_script_class_icons={
+"Snake": ""
+}
+
+[application]
+
+config/name="Snake"
+run/main_scene="res://SnakeMainScene.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=800
+window/size/height=800
+window/dpi/allow_hidpi=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
