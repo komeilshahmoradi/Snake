@@ -8,3 +8,8 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 data_*/
+icon.png.import
+Sprites/grass.png.import
+Sound/crunch.wav.import
+Sound/crunch.wav.import
+Sound/crunch.wav.import
