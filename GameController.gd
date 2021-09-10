@@ -1,6 +1,5 @@
 extends Node
 var snake
-var test
 var window_border
 
 func _ready():
@@ -26,7 +25,7 @@ func draw_apple():
 			new_rand_pos = get_random_pos_for_apple()
 			continue
 		if(block == snake.body[snake.body.size()-1]):
-			$apple.rect_position = new_rand_pos
+			$apple.position = new_rand_pos
 		
 
 
@@ -39,7 +38,7 @@ func draw_snake():
 		$snake.get_child(index).rect_position = snake.body[index]
 
 func is_apple_colide():
-	if(snake.body[0] == $apple.rect_position):
+	if(snake.body[0] == $apple.position):
 		return true
 	return false
 
